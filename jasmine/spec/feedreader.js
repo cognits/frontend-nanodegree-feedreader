@@ -32,11 +32,23 @@ $(function() {
          * and that the URL is not empty.
          */
 
+         it("defining URL", function(){ 
+         	for (var i in allFeeds)
+         		expect(allFeeds[i].url).toBeDefined();
+         		expect(allFeeds[i].url.length).not.toBe(0);
+         	});
 
         /* TODO: Write a test that loops through each feed
          * in the allFeeds object and ensures it has a name defined
          * and that the name is not empty.
          */
+
+         it("Expect object", function(){
+         	for (var x in allFeeds)
+         		expect(allFeeds[x].name).toBeDefined();
+         		expect(allFeeds[x].name.length).not.toBe(0);
+         });
+
     });
 
 
@@ -53,7 +65,6 @@ $(function() {
           * should have two expectations: does the menu display when
           * clicked and does it hide when clicked again.
           */
-
     /* TODO: Write a new test suite named "Initial Entries" */
 
         /* TODO: Write a test that ensures when the loadFeed
