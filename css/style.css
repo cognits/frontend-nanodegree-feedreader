@@ -1,4 +1,4 @@
-*,
+    *,
 *:after,
 *:before: {
     box-sizing: inherit;
@@ -66,9 +66,7 @@ h2 {
     padding: 0;
 }
 
-.menu li {
-    padding: 0;
-}
+
 
 .menu li a {
     color: #fff;
@@ -78,7 +76,7 @@ h2 {
 
 .menu-hidden .menu {
     transform: translate3d(-12em, 0, 0);
-    transition: transform 0.2s;
+    transition: transform 1s;
 }
 
 .feed {
