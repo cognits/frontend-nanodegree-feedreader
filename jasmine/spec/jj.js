@@ -63,7 +63,7 @@ $(function() {
          it('is hidden by default', function(){
             //El comparador ' toBeTruthy ' se hace para comprobar fundición boolean
             expect(body.hasClass('menu-hidden')).toBeTruthy();
-            //hasClass: Determine si cualquiera de los elementos emparejados son asignados la clase dada.
+
          });
 
          /* TODO: Write a test that ensures the menu changes
