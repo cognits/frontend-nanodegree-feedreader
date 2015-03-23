@@ -72,8 +72,7 @@ $(function() {
           * clicked and does it hide when clicked again.
           */
           it('changes visibility when menu icon is clicked', function(){
-            //trigger:jQuery provides a way to trigger the event handlers bound to an element without any user interaction via the .trigger() method.
-            //jQuery proporciona una forma de activar los controladores de eventos unidos a un elemento sin ninguna interacción del usuario a través del método .trigger (). 
+
             icon.trigger('click');
             expect(body.hasClass('menu-hidden')).toBeFalsy();
 
@@ -112,15 +111,15 @@ $(function() {
          * by the loadFeed function that the content actually changes.
          * Remember, loadFeed() is asynchronous.
          */
-         var feedsContainer = $('.feed').find('h2').text();
+         var feedTexts = $('.feed').find('h2').text();
 
          beforeEach(function(done){
-            feedsContainer;
+            feedTexts;
             loadFeed(1, done);
          })
 
          it('ensures that a new feed is loaded', function(done){
-            expect($('.feed').find('h2').text()).not.toBe(feedsContainer);
+            expect($('.feed').find('h2').text()).not.toBe(feedTexts);
             done();
          });
 
