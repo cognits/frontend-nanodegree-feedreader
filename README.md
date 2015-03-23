@@ -38,4 +38,5 @@ You will learn how to use Jasmine to write a number of tests against a pre-exist
 13. Write a test that ensures when a new feed is loaded by the loadFeed function that the content actually changes. Remember, loadFeed() is asynchronous.
 14. When complete - all of your tests should pass.
 
-##Visiti My Page: http://mrodriguezz.github.io/frontend-nanodegree-feedreader
+##Visiti My Page: 
+http://mrodriguezz.github.io/frontend-nanodegree-feedreader
