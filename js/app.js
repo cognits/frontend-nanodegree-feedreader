@@ -1,4 +1,4 @@
-/* app.js
+allFeeds/* app.js
  *
  * This is our RSS feed reader application. It uses the Google
  * Feed Reader API to grab RSS feeds as JSON object we can make
@@ -60,7 +60,7 @@ function loadFeed(id, cb) {
                 entries = result.feed.entries,
                 entriesLen = entries.length,
                 entryTemplate = Handlebars.compile($('.tpl-entry').html());
-
+                // Handlebars es una libreria de javascritp templateing 
             title.html(feedName);   // Set the header text
             container.empty();      // Empty out all previous entries
 
